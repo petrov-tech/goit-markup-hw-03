@@ -25,6 +25,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid tomato;
+}
+
+/* logo */
+
 .logo,
 .word {
   font-family: "Raleway";
@@ -39,11 +57,6 @@ body {
 .word {
   color: var(--accent-color);
 }
-
-.list {
-  list-style: none;
-}
-
 
 /* site nav */
 
@@ -89,12 +102,16 @@ body {
 
 .hero {
   background-color: var(--footer-backgound);
-}
-
-.hero-advantages {
-}
+text-align: center;}
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  height: 120px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -106,18 +123,22 @@ body {
 }
 
 .hero-btn {
+  display: inline-block;
+  min-width: 216px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  color: var(--white-color);
-  background-color: var(--accent-color);
 }
 
 .hero-btn:hover,
@@ -141,6 +162,8 @@ body {
 }
 
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -148,6 +171,8 @@ body {
 }
 
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -158,6 +183,8 @@ body {
 
 .practice-title,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -184,9 +211,6 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--secondary-text-color);
-}
-
-.team-img {
 }
 
 /* footer section */
@@ -233,22 +257,31 @@ body {
 /* button section */
 
 .button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+  display: inline-block;
+  padding-left: 22px;
+  padding-right: 22px;
+  min-width: 73px;
+  height: 38px;
+
   background-color: var(--background-secondary-color);
   color: var(--text-color);
   cursor: pointer;
   border-radius: 4px;
   border: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* content section */

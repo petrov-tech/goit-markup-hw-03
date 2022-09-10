@@ -20,44 +20,42 @@
 
   <body>
     <!-- Шапка -->
-       <header class="header">
-      <div class="container-header">
-        <nav class="nav">
-        <a lang="en" href="./index.html" class="logo">
-          <span class="word">Web</span>Studio
-        </a>
+ <header class="header">
+      <div class="container nav">
+        <nav class="main-nav">
+          <a lang="en" href="./index.html" class="logo">
+            <span class="word">Web</span>Studio
+          </a>
 
-        <ul class="site-nav list">
-          <li class="nav-link">
-            <a href="./index.html" class="link">Студія</a>
-          </li>
-          <li class="nav-link">
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
-          </li>
-          <li class="nav-link">
-            <a href="./test.html" class="link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-        <div class="contacts">
-          <ul class="contact list">
-            <li class="contacts-link">
-              <a href="mailto:info@devstudio.com" class="links">
-                info@devstudio.com
-              </a>
+          <ul class="site-nav list">
+            <li>
+              <a href="./index.html" class="link">Студія</a>
             </li>
-            <li class="contacts-link">
-              <a href="tel:+380961111111" class="links">+380961111111</a>
+            <li>
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li>
+              <a href="" class="link">Контакти</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        <ul class="contact list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="links">
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="links">+380961111111</a>
+          </li>
+        </ul>
       </div>
     </header>
-
     <main class="main">
       <!-- Фільтр контенту -->
       <section class="filter">
-        <div class="filter-container">
+        <div class="container">
           <h2 class="visually-hidden">Фільтр контенту</h2>
         <ul class="btn list">
           <li><button class="button" type="button">Усі</button></li>
@@ -71,7 +69,7 @@
 
       <!-- Контент -->
       <section class="content">
-        <div class="content-container">
+        <div class="container">
           <h2 class="visually-hidden">Контент</h2>
         <ul class="content-list list">
           <li>
@@ -171,8 +169,8 @@
 
     <!-- підвал -->
     <footer class="footer">
-      <div class="container-footer">
-        <a lang="en" href="./index.html" class="logo second"
+     <div class="container">
+       <a lang="en" href="./index.html" class="logo second"
         ><span class="logo-word secondary">Web</span>Studio</a
       >
       <address class="address">
@@ -192,7 +190,7 @@
           </li>
         </ul>
       </address>
-      </div>
+     </div>
     </footer>
   </body>
 </html>

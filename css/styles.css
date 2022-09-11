@@ -50,14 +50,16 @@ img {
 }
 
 /* logo */
+
 .logo {
   margin-right: 93px;
-  padding-top: 24px;
-  /* padding-bottom: 25px; */
+ 
 }
 
 .logo,
 .word {
+ padding-top: 24px;
+
   color: var(--text-color);
 
   font-family: "Raleway";
@@ -75,8 +77,8 @@ img {
 /* site nav */
 
 .header {
-  background-color: var(--background-main-color);
-  border: 1px solid #ececec;
+  /* background-color: var(--background-main-color); */
+  border-bottom: 1px solid #ececec;
 }
 
 .container-header {
@@ -154,7 +156,9 @@ img {
 .hero {
   padding-top: 210px;
   padding-bottom: 200px;
+
   background-color: var(--footer-backgound);
+
   text-align: center;
 }
 
@@ -242,6 +246,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   color: var(--secondary-text-color);
 }
 
@@ -280,6 +285,32 @@ img {
   display: flex;
 }
 
+/* CARD SET */
+.team-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--team-list-gap));
+  margin-top: calc(-1 * var(--team-list-gap));
+}
+
+.team-list > .card {
+  flex-basis: calc(100% / 4 - var(--team-list-gap));
+  margin-left: var(--team-list-gap);
+  margin-top: var(--team-list-gap);
+}
+
+/* CARD */
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+
 .team-name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -293,18 +324,27 @@ img {
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--secondary-text-color);
+
   padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  color: var(--secondary-text-color);
 }
 
 /* footer section */
 
 .footer {
   background-color: var(--footer-backgound);
+}
+
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .second {
@@ -315,11 +355,18 @@ img {
   color: var(--accent-color);
 }
 
+
 .contact-link {
   text-decoration-line: none;
 }
 
+.contacts-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+
 .address {
+  margin-top: 20px;
   font-style: inherit;
 }
 
@@ -327,6 +374,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   text-decoration-line: none;
+
   color: var(--background-main-color);
 }
 
@@ -386,6 +434,9 @@ img {
 }
 
 .content-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -393,6 +444,9 @@ img {
 }
 
 .content-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -404,41 +458,6 @@ img {
   margin-bottom: 50px;
   justify-content: center;
 }
-
-/* CARD SET */
-.team-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--team-list-gap));
-  margin-top: calc(-1 * var(--team-list-gap));
-}
-
-.team-list > .card {
-  flex-basis: calc(100% / 4 - var(--team-list-gap));
-  margin-left: var(--team-list-gap);
-  margin-top: var(--team-list-gap);
-}
-
-/* CARD */
-.card {
-  box-shadow: var(--card-shadow);
-  border-radius: 0 0 4px 4px;
-  overflow: hidden;
-}
-
-/* .card-content {
-  padding: 10px;
-} */
-
-/* .card-text {
-  margin-top: 10px;
-} */
-
-/* Card filter*/
 
 .content-list {
   display: flex;

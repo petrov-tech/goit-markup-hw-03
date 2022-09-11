@@ -348,6 +348,8 @@ img {
 }
 
 .second {
+  padding-top: 0;
+  margin-right: 0;
   color: var(--background-main-color);
 }
 

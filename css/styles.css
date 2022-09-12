@@ -82,6 +82,7 @@ img {
 }
 
 .container-header {
+  padding: 0;
   display: flex;
   align-items: center;
 }
@@ -154,7 +155,7 @@ img {
 /* hero section */
 
 .hero {
-  padding-top: 210px;
+  padding-top: 200px;
   padding-bottom: 200px;
 
   background-color: var(--footer-backgound);
@@ -208,7 +209,9 @@ img {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -222,9 +225,10 @@ img {
   justify-content: space-between;
 }
 
-.advantages,
-.practice {
-  background-color: var(--background-main-color);
+
+
+.advantages {
+  padding-bottom: 0;
 }
 
 .advantages-list .item + .item {
@@ -273,9 +277,6 @@ img {
 
 /* team section */
 
-.container-team {
-  padding-bottom: 94px;
-}
 
 .team {
   background-color: var(--background-secondary-color);
@@ -286,6 +287,11 @@ img {
 }
 
 /* CARD SET */
+.card-thumb {
+  background-color:var(--background-main-color);
+}
+
+
 .team-list {
   padding: 0;
   margin: 0;
@@ -310,10 +316,15 @@ img {
   overflow: hidden;
 }
 
+.card-content {
+  background-color: var(--background-main-color);
+}
+
 
 .team-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   color: var(--primary-text-color);
 

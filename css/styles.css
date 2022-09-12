@@ -53,12 +53,11 @@ img {
 
 .logo {
   margin-right: 93px;
- 
 }
 
 .logo,
 .word {
- padding-top: 24px;
+  padding-top: 24px;
 
   color: var(--text-color);
 
@@ -77,7 +76,6 @@ img {
 /* site nav */
 
 .header {
-  /* background-color: var(--background-main-color); */
   border-bottom: 1px solid #ececec;
 }
 
@@ -225,8 +223,6 @@ img {
   justify-content: space-between;
 }
 
-
-
 .advantages {
   padding-bottom: 0;
 }
@@ -277,7 +273,6 @@ img {
 
 /* team section */
 
-
 .team {
   background-color: var(--background-secondary-color);
 }
@@ -288,9 +283,8 @@ img {
 
 /* CARD SET */
 .card-thumb {
-  background-color:var(--background-main-color);
+  background-color: var(--background-main-color);
 }
-
 
 .team-list {
   padding: 0;
@@ -319,7 +313,6 @@ img {
 .card-content {
   background-color: var(--background-main-color);
 }
-
 
 .team-name {
   margin: 0;
@@ -368,7 +361,6 @@ img {
   color: var(--accent-color);
 }
 
-
 .contact-link {
   text-decoration-line: none;
 }
@@ -376,7 +368,6 @@ img {
 .contacts-link:not(:last-child) {
   margin-bottom: 9px;
 }
-
 
 .address {
   margin-top: 20px;
